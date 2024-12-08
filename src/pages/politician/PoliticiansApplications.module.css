@@ -1,0 +1,88 @@
+/* General Container Styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* Headings */
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  /* User Details Section */
+  .userDetails {
+    margin-bottom: 30px;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .strong {
+    font-weight: bold;
+  }
+  
+  .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Applications List */
+  .applicationsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .applicationItem {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .applicationDetail {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Error and Loading Messages */
+  .message {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  .loading {
+    color: #3498db;
+  }
+  

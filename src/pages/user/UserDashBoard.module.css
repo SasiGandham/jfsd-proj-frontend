@@ -1,0 +1,91 @@
+/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main Feed Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Post Styling */
+.post {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Header */
+.post h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 15px;
+  color: #262626;
+  border-bottom: 1px solid #dbdbdb;
+  background: #f9f9f9;
+}
+
+/* Post Image */
+.post img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Post Content */
+.postcontent {
+  padding: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Post Meta */
+.postmeta {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Add Post Button */
+.addButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

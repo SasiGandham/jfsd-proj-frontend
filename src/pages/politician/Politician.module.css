@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    align-items: center;
+    width: 1500px;               /* Full width of the screen */
+    max-width: 100%;           /* Ensures it stretches to the screen's width */
+    padding: 10px 20px;        /* Padding for spacing */
+    background-color: #4A90E2; /* Nice background color */
+    color: white;              /* Text color */
+    height: 100px;             /* Set the height to 100px */
+  }
+  
+  .profile, .politician {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profilePic, .politicianPic {
+    width: 70px;               /* Adjust width */
+    height: 70px;              /* Adjust height */
+    border-radius: 50%;        /* Makes the images round */
+    object-fit: cover;         /* Ensures the image fits inside the circle */
+    margin-bottom: 10px;       /* Space between image and text */
+  }
+  
+  .name, .politicianLabel {
+    font-size: 14px;           /* Font size for the text */
+    text-align: center;        /* Center the text */
+    margin: 0;                 /* Remove any default margin */
+  }
+  
+  .applicationBtn {
+    padding: 8px 20px;         /* Button padding */
+    background-color: #FF7F50; /* Button color */
+    border: none;              /* Remove border */
+    color: white;              /* Button text color */
+    border-radius: 4px;        /* Rounded corners */
+    cursor: pointer;          /* Pointer on hover */
+    font-size: 14px;           /* Font size for the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  .applicationBtn:hover {
+    background-color: #FF6347; /* Darker shade for hover */
+  }
+  
+
+  .logoutBtn {
+    background-color: white;
+    color: red;
+    border: 0;
+    padding: 8px 14px;
+  }
+
+  .logoutBtn:hover {
+    cursor: pointer;
+    border-radius: 5px;
+  }
