@@ -6,7 +6,7 @@ export const fetchPosts = createAsyncThunk(
   "posts/fetchPosts",
   async ({ page, size }, { rejectWithValue }) => {
     try {
-      const response = await axios.get(`http://localhost:8082/api/posts/all`, {
+      const response = await axios.get(`https://jfsd-backend-project.up.railway.app/api/posts/all`, {
         params: { page, size },
       });
       return response.data;
@@ -21,7 +21,7 @@ export const deletePost = createAsyncThunk(
   "posts/deletePost",
   async (postId, { rejectWithValue }) => {
     try {
-      await axios.delete(`http://localhost:8082/api/posts/${postId}`);
+      await axios.delete(`https://jfsd-backend-project.up.railway.app/api/posts/${postId}`);
       return postId; // Return the deleted post's ID
     } catch (error) {
       return rejectWithValue(error.response.data);

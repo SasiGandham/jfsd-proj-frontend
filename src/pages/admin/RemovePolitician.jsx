@@ -7,7 +7,7 @@ export default function RemovePolitician() {
   useEffect(() => {
     const fetchPoliticians = async () => {
       try {
-        const response = await fetch("http://localhost:8082/api/users");
+        const response = await fetch("https://jfsd-backend-project.up.railway.app/api/users");
         if (!response.ok) {
           throw new Error("Failed to fetch politicians");
         }
@@ -26,7 +26,7 @@ export default function RemovePolitician() {
 
   const handleDelete = async (email) => {
     try {
-      const response = await fetch(`http://localhost:8082/api/users/${email}`, {
+      const response = await fetch(`https://jfsd-backend-project.up.railway.app/api/users/${email}`, {
         method: "DELETE",
       });
       if (!response.ok) {

@@ -139,7 +139,7 @@ export async function action({ request }) {
     photo: photoBase64,
   };
 
-  const response = await fetch("http://localhost:8082/api/users/signup", {
+  const response = await fetch("https://jfsd-backend-project.up.railway.app/api/users/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

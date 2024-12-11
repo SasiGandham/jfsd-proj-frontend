@@ -21,8 +21,8 @@ export default function UserDetails() {
         setLoading(true);
 
         const [userDetailsResponse, applicationsResponse] = await Promise.all([
-          fetch(`http://localhost:8082/api/users/${userMail}`),
-          fetch(`http://localhost:8082/api/applications/user/${userMail}`),
+          fetch(`https://jfsd-backend-project.up.railway.app/api/users/${userMail}`),
+          fetch(`https://jfsd-backend-project.up.railway.app/api/applications/user/${userMail}`),
         ]);
 
         if (!userDetailsResponse.ok || !applicationsResponse.ok) {

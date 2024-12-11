@@ -31,7 +31,7 @@ export async function action({ request }) {
     store.dispatch(signUpActions.signUpStage1(emailData))
 
 
-    const response = await fetch("http://localhost:8082/api/auth/send-otp", {
+    const response = await fetch("https://jfsd-backend-project.up.railway.app/api/auth/send-otp", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"

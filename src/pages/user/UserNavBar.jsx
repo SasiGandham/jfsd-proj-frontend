@@ -15,7 +15,7 @@ const UserNavBar = () => {
     // Function to fetch politician details
     async function fetchPoliticianDetails(politicianEmail) {
         try {
-            const response = await fetch(`http://localhost:8082/api/users/${politicianEmail}`);
+            const response = await fetch(`https://jfsd-backend-project.up.railway.app/api/users/${politicianEmail}`);
             if (response.ok) {
                 const data = await response.json();
                 setPoliticianDetails(data);

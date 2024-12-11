@@ -7,7 +7,7 @@ export default function RemoveUser() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:8082/api/users");
+        const response = await fetch("https://jfsd-backend-project.up.railway.app/api/users");
         if (!response.ok) {
           throw new Error("Failed to fetch users");
         }
@@ -24,7 +24,7 @@ export default function RemoveUser() {
 
   const handleDelete = async (email) => {
     try {
-      const response = await fetch(`http://localhost:8082/api/users/${email}`, {
+      const response = await fetch(`https://jfsd-backend-project.up.railway.app/${email}`, {
         method: "DELETE",
       });
       if (!response.ok) {

@@ -53,7 +53,7 @@ export default function SendApplication() {
   // Function to submit the application
   const action = async (applicationData) => {
     try {
-      const response = await fetch("http://localhost:8082/api/applications/create", {
+      const response = await fetch("https://jfsd-backend-project.up.railway.app/api/applications/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
