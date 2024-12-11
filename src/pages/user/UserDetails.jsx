@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import styles from "./UserDetails.module.css";
 
@@ -92,7 +92,7 @@ export default function UserDetails() {
                   {app.description}
                 </p>
                 <p className={styles.detail}>
-                  <span className={styles.strong}>Status:</span> {app.status}
+                  <span className={styles.strong}>Status:</span> {app.progress}
                 </p>
               </li>
             ))}

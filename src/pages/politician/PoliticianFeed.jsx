@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchPosts, resetPosts } from "../../store/postsSlice";
 import { useNavigate } from "react-router-dom";
-import styles from './Politician.module.css'
+import styles from './PoliticianFeed.module.css'
 
 export default function PoliticianFeed() {
   const dispatch = useDispatch();
